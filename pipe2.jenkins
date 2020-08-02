@@ -11,18 +11,13 @@ pipeline {
             steps {
                 echo ' ============== start cloning app =================='
                 sh 'git clone https://github.com/greyli/todoism.git'
-
-                }
-            }
-        }
-    stage('build app') {
-            steps {
-                echo ' ============== start building app =================='
-                dir ('todoism')
+                dir ('todoism'){
                 sh 'pip install -r requirements.txt'
                 sh 'flask initdb'
                 sh 'flask translate compile'
                 sh 'flask run'
+                }
+                }
             }
         }
     }
