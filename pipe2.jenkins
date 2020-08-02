@@ -10,8 +10,10 @@ pipeline {
         stage('clone todoism app') {
             steps {
                 echo ' ============== start cloning app =================='
-                sh 'git clone https://github.com/greyli/todoism.git'
-                dir ('todoism'){
+                sh 'git clone https://github.com/jpdf64/test-project.git'
+                sh 'set FLASK_APP=todoism'
+                sh 'set FLASK_ENV=development'
+                dir ('flask/todoism'){
                 sh 'pip install -r requirements.txt'
                 }
                 sh 'flask initdb'
