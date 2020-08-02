@@ -11,15 +11,18 @@ pipeline {
             steps {
                 echo ' ============== start cloning app =================='
                 sh 'git clone https://github.com/jpdf64/test-project.git'
-                sh 'set FLASK_APP=todoism'
-                sh 'set FLASK_ENV=development'
-                dir ('test-project/flask/todoism/'){
-                sh 'pip install -r requirements.txt'
-                }
-                sh 'flask initdb'
-                sh 'flask translate compile'
-                sh 'flask run'
-                }
             }
         }
+    }
+    stages {
+        stage('build app') {
+            steps {
+                dir ('test-project/flask/todoism/'){
+                sh 'set FLASK_APP=todoism'
+                sh 'set FLASK_ENV=development'
+                sh 'pip install -r requirements.txt'
+                sh 'flask initdb'
+                sh 'flask run'
+                }
+            }}}
     }
