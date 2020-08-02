@@ -13,9 +13,8 @@ pipeline {
                 sh 'git clone https://github.com/jpdf64/test-project.git'
             }
         }
-    }
-    stages {
-        stage('build app') {
+        
+               stage('build app') {
             steps {
                 dir ('test-project/flask/todoism/'){
                 sh 'set FLASK_APP=todoism'
@@ -23,6 +22,7 @@ pipeline {
                 sh 'pip install -r requirements.txt'
                 sh 'flask initdb'
                 sh 'flask run'
-                }
             }}}
+    }
+
     }
