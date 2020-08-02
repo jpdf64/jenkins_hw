@@ -8,15 +8,15 @@ Ubuntu 20.04 latest (light) – создать двух пользователе
 
 
 
-![Screenshot_20200803_013758.png](/images/fe3d6b85988f4f64bf62981bf9d5ec2e)
+![Screenshot_20200803_013758.png](/images/Screenshot_20200803_013758.png)
 
 
 
-![Screenshot_20200803_013824.png](/images/0e640808d2f64b9b853ce493274b7cc0)
+![Screenshot_20200803_013824.png](/images/Screenshot_20200803_013824.png)
 
 
 
-![Screenshot_20200803_013837.png](/images/4bd08ae3ceaa4f08b5471ba32c60bf55)
+![Screenshot_20200803_013837.png](/images/Screenshot_20200803_013837.png)
 
 
 
@@ -25,9 +25,9 @@ Ubuntu 20.04 latest (light) – создать двух пользователе
 - Протестировать работу приоложения (продемострировать работу собранного приложения в выбранной вами среде).
 
 
-![Screenshot_20200802_193814.png](/images/824fcd7ecc294526b7fc6fa169c8d145)
+![Screenshot_20200802_193814.png](/images/Screenshot_20200802_193814.png)
 
 
 
-![Screenshot_20200802_193839.png](/images/4f4e80be6b134d35a2ed2ce26e8c869a)
+![Screenshot_20200802_193839.png](/images/Screenshot_20200802_193839.png)
 
