@@ -15,21 +15,4 @@ pipeline {
                 }
             }
         }
-        stage('build app') {
-            steps {
-                echo ' ============== start building app =================='
-                dir ('todoism') {
-                    sh 'pip install -r requirements.txt'
-                    sh 'flask initdb'
-                    sh 'flask translate compile'
-                    sh 'flask run'
-                }
-            }
-        }
-        stage('app test') {
-            steps {
-                echo ' ============== testing app =================='
-                sh 'curl http://127.0.0.1:5000/'
-            }
-        }
     }
