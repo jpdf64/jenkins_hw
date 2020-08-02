@@ -16,6 +16,8 @@ pipeline {
         
                stage('build app') {
             steps {
+                sh 'python -m venv env'
+                sh 'source env/bin/activate'
                 dir ('test-project/flask/todoism/'){
                 sh 'set FLASK_APP=todoism'
                 sh 'set FLASK_ENV=development'
