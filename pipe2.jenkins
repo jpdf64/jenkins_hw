@@ -13,7 +13,7 @@ pipeline {
                 sh 'git clone https://github.com/jpdf64/test-project.git'
                 sh 'set FLASK_APP=todoism'
                 sh 'set FLASK_ENV=development'
-                dir ('flask/todoism'){
+                dir ('test-project/flask/todoism/'){
                 sh 'pip install -r requirements.txt'
                 }
                 sh 'flask initdb'
