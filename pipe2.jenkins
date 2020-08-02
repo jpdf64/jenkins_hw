@@ -18,12 +18,11 @@ pipeline {
     stage('build app') {
             steps {
                 echo ' ============== start building app =================='
-                dir ('todoism') {
-                    sh 'pip install -r requirements.txt'
-                    sh 'flask initdb'
-                    sh 'flask translate compile'
-                    sh 'flask run'
-                }
+                dir ('todoism')
+                sh 'pip install -r requirements.txt'
+                sh 'flask initdb'
+                sh 'flask translate compile'
+                sh 'flask run'
             }
         }
     }
