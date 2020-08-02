@@ -35,6 +35,7 @@ pipeline {
         stage("curl test") {
             steps {
                 echo " ============== CURL =================="
+                sh 'docker run jpdf64/pipe-1:latest'
                 sh 'curl 172.17.0.2'
                 
             }
